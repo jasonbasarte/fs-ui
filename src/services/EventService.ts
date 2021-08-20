@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const apiClient = axios.create({
-    baseURL: 'http://freeswitchcall.com/',
+    baseURL: 'http://www.freeswitchcallapp.com/',
     withCredentials: false,
     headers: {
         // crossdomain: true ,
@@ -17,7 +17,7 @@ const apiClient = axios.create({
 
 export default {
     getCallConfigById(params: any) {
-        return apiClient.get('/freeswitch-call-config', {
+        return apiClient.get('/freeswitch-call-config/getCallConfigById', {
             params: params,
         });
     },
